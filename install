@@ -1,0 +1,41 @@
+#!/bin/bash
+#########################################
+# HOMESEER (V4) LINUX - INSTALL SCRIPT
+#########################################
+#
+#  curl -ssL https://homeseer.dev/install | sudo bash
+#
+
+# download and install the HOMESEER.DEV GPG public key
+echo ====================================================
+echo INSTALLING HOMESEER.DEV GPG PUBLIC KEY
+echo ====================================================
+curl -ssL https://homeseer.dev/homeseer.gpg | apt-key add -
+
+# download and install the pi4j apt repository list
+echo ====================================================
+echo ADDING HOMESEER.DEV APT REPOSITORY
+echo ====================================================
+sudo curl -sSL https://homeseer.dev/v4/homeseer.list --output /etc/apt/sources.list.d/homeseer.list
+
+# update the apt package list
+echo ====================================================
+echo UPDATING APT REPOSITORIES
+echo ====================================================
+apt-get update -o Dir::Etc::sourcelist="sources.list.d/homeseer.list"  -o Dir::Etc::sourceparts="-" -o APT::Get::List-Cleanup="0"
+
+# download and install homeseer debian package
+echo ====================================================
+echo INSTALLING HOMESEER (V4)
+echo ====================================================
+apt-get install homeseer
+
+echo ====================================================
+echo HOMESEER (V4) INSTALLATION COMPLETE
+echo ====================================================
+echo
+echo The Homeseer installation files are located at:
+echo   /opt/homeseer
+echo
+echo Please see https://homeseer.dev for more information.
+echo
