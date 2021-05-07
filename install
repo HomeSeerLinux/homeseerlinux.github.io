@@ -24,6 +24,14 @@ echo UPDATING APT REPOSITORIES
 echo ====================================================
 apt-get update -o Dir::Etc::sourcelist="sources.list.d/homeseer.list"  -o Dir::Etc::sourceparts="-" -o APT::Get::List-Cleanup="0"
 
+# install prerequisites
+echo ====================================================
+echo INSTALLING PREREQUSITES
+echo ====================================================
+apt-get update
+apt-get install --yes mono-complete mono-devel mono-vbnc flite chromium-browser aha ffmpeg alsa-base alsa-utils
+apt-get remove --yes brltty
+
 # download and install homeseer debian package
 echo ====================================================
 echo INSTALLING HOMESEER (V4)
