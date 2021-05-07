@@ -1,0 +1,5 @@
+#########################################
+# HOMESEER (V4) LINUX - APT REPOSITORY
+#########################################
+deb [arch=all] https://homeseer.dev/download v4 stable
+#deb [arch=all] https://homeseer.dev/download v4 stable testing
