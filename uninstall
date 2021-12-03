@@ -3,7 +3,7 @@
 # HOMESEER (V4) LINUX - UNINSTALL SCRIPT
 #########################################
 #
-#  curl -ssL https://homeseer.dev/uninstall | sudo bash
+#  curl -ssL https://homeseer.sh/uninstall | sudo bash
 #
 
 # uninstall homeseer debian package
@@ -14,15 +14,15 @@ apt-get remove homeseer -y
 
 # remove homeseer from apt repository list
 echo ====================================================
-echo REMOVING HOMESEER.DEV APT REPOSITORY
+echo REMOVING HOMESEER.SH APT REPOSITORY
 echo ====================================================
 rm /etc/apt/sources.list.d/homeseer.list
 
-# remove the HOMESEER.DEV GPG public key
+# remove the HOMESEER.SH GPG public key
 echo ====================================================
-echo REMOVING HOMESEER.DEV GPG PUBLIC KEY
+echo REMOVING HOMESEER.SH GPG PUBLIC KEY
 echo ====================================================
-apt-key del team@homeseer.dev
+apt-key del team@homeseer.sh
 
 # update the apt package list
 echo ====================================================

@@ -3,20 +3,20 @@
 # HOMESEER (V4) LINUX - INSTALL SCRIPT
 #########################################
 #
-#  curl -ssL https://homeseer.dev/v4/install | sudo bash
+#  curl -ssL https://homeseer.sh/v4/install | sudo bash
 #
 
-# download and install the HOMESEER.DEV GPG public key
+# download and install the HOMESEER.SH GPG public key
 echo ====================================================
-echo INSTALLING HOMESEER.DEV GPG PUBLIC KEY
+echo INSTALLING HOMESEER.SH GPG PUBLIC KEY
 echo ====================================================
-curl -ssL https://homeseer.dev/homeseer.gpg | apt-key add -
+curl -ssL https://homeseer.sh/homeseer.gpg | apt-key add -
 
 # download and install the pi4j apt repository list
 echo ====================================================
-echo ADDING HOMESEER.DEV APT REPOSITORY
+echo ADDING HOMESEER.SH APT REPOSITORY
 echo ====================================================
-sudo curl -sSL https://homeseer.dev/v4/homeseer.list --output /etc/apt/sources.list.d/homeseer.list
+sudo curl -sSL https://homeseer.sh/v4/homeseer.list --output /etc/apt/sources.list.d/homeseer.list
 
 # update the apt package list
 echo ====================================================
@@ -29,7 +29,7 @@ echo ====================================================
 echo INSTALLING PREREQUSITES
 echo ====================================================
 apt-get update
-apt-get install --yes mono-complete mono-devel mono-vbnc flite chromium-browser aha ffmpeg alsa-base alsa-utils
+apt-get install --yes mono-complete mono-devel mono-vbnc flite chromium-browser aha ffmpeg alsa-base alsa-utils tmux curl wget nano
 apt-get remove --yes brltty
 
 # download and install homeseer debian package
@@ -45,5 +45,5 @@ echo
 echo The Homeseer installation files are located at:
 echo   /opt/homeseer
 echo
-echo Please see https://homeseer.dev for more information.
+echo Please see https://homeseer.sh for more information.
 echo
