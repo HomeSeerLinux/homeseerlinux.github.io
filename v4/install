@@ -1,6 +1,6 @@
 #!/bin/bash
 #########################################
-# HOMESEER (V4) LINUX - INSTALL SCRIPT
+# HOMESEER LINUX - INSTALL SCRIPT
 #########################################
 #
 #  curl -ssL https://homeseer.sh/v4/install | sudo bash
@@ -34,12 +34,12 @@ apt-get remove --yes brltty
 
 # download and install homeseer debian package
 echo ====================================================
-echo INSTALLING HOMESEER (V4)
+echo INSTALLING HOMESEER
 echo ====================================================
 apt-get install homeseer
 
 echo ====================================================
-echo HOMESEER (V4) INSTALLATION COMPLETE
+echo HOMESEER INSTALLATION COMPLETE
 echo ====================================================
 echo
 echo The Homeseer installation files are located at:
