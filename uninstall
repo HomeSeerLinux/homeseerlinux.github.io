@@ -31,5 +31,5 @@ echo ====================================================
 apt-get update
 
 echo ====================================================
-echo HOMESEER (V4) UNINSTALL COMPLETE
+echo HOMESEER UNINSTALL COMPLETE
 echo ====================================================
