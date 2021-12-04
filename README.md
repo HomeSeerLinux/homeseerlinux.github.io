@@ -9,6 +9,11 @@
   The latest official release packages and release notes for HomeSeer can be found at: https://docs.homeseer.com/display/HSPI/HS4+Release+Notes
   
   This repository is not supported, sponsored or directly affiliated with Homeseer (https://homeseer.com/).
+  
+  #### Resource Links
+  - WebPage: https://homeseer.sh
+  - GitHub Repository: https://github.com/HomeSeerLinux/homeseerlinux.github.io
+  - APT/PPA Package Repository: https://github.com/HomeSeerLinux/download
    
 ---
 
