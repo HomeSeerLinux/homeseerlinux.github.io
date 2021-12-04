@@ -8,7 +8,7 @@
 
 # uninstall homeseer debian package
 echo ====================================================
-echo UNINSTALLING Pi4J
+echo UNINSTALLING HOMESEER
 echo ====================================================
 apt-get remove homeseer -y
 
