@@ -2,7 +2,8 @@
 
 (Developed with ♥ by SavageSoftware, LLC.)
 
-#### :bomb:  This repository and scripts are considered `EXPERIMENTAL` at this time.  We are not responsible for any data lost or systems corrupted!
+> :bomb:  This repository and scripts are considered `EXPERIMENTAL` at this time.  We are not responsible for any data lost or systems corrupted!
+
 ---
 
   The purpose of this repository is to host automated installation scripts and APT/PPA repository packages for installing HomeSeer on Debian-based Linux systems.
@@ -25,7 +26,6 @@ curl -sSL https://homeseer.sh/install | sudo bash
 ```
 
 > :pushpin:  Before running this script blindly with `sudo` privileges on your system, you should inspect the [script contents](https://raw.githubusercontent.com/HomeSeerLinux/homeseerlinux.github.io/main/install) to ensure there are no nefarious or malicious actions taking place.
-
 
 ## Manual Installation
 If you prefer not to use the simple script above due the the security nature of blindly allowing a script to run with `sudo` privileges, you can also use these commands to setup the appropriate Homeseer APT/PPA repository on your local system:
@@ -108,4 +108,46 @@ sudo apt install homeseer=4.2.7.0
 
 ---
 
+## Installation Location/Notes
 
+The Homeseer Debian installed package will install Homeseer to the following location:
+
+```
+/opt/HomeSeer
+```
+
+Additionally a `homeseer` system user account is created and a `homeseer.service` is registered to run Homeseer automatically on startup and in the background.  
+
+---
+
+## Service Control / Daemon
+
+The Homeseer Debian installed package will install a `homeseer.service` (systemd) configuration to the following location:
+
+```bash
+/etc/systemd/system/homeseer.service
+```
+
+> :mag_right: [View the contents of the `homeseer.service` file here](https://github.com/HomeSeerLinux/download/blob/main/.build/etc/systemd/system/homeseer.service)
+
+On completion of the installation, the Homeseer service should be started automatically. 
+
+You can `start` the Homeseer service using the following command:
+
+```bash
+sudo service homeseer start
+```
+
+You can `stop` the Homeseer service using the following command:
+
+```bash
+sudo service homeseer stop
+```
+
+You can chech the `status` of the Homeseer service using the following command:
+
+```bash
+sudo service homeseer status
+```
+
+---
