@@ -8,7 +8,7 @@
   The purpose of this repository is to host automated installation scripts and APT/PPA repository packages for installing HomeSeer on Debian-based Linux systems.
   The latest official release packages and release notes for HomeSeer can be found at: [https://docs.homeseer.com/display/HSPI/HS4+Release+Notes](https://docs.homeseer.com/display/HSPI/HS4+Release+Notes)
   
-  This repository is not supported, sponsored or directly affiliated with Homeseer (https://homeseer.com/).
+  This repository is not supported, sponsored or directly affiliated with Homeseer ([https://homeseer.com/](https://homeseer.com/)).
   
   #### Resource Links
   - WebPage: [https://homeseer.sh](https://homeseer.sh)
