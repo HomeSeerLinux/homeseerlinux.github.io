@@ -12,7 +12,7 @@ echo INSTALLING HOMESEER.SH GPG PUBLIC KEY
 echo ====================================================
 curl -ssL https://homeseer.sh/homeseer.gpg | apt-key add -
 
-# download and install the pi4j apt repository list
+# download and install the HOMESEER.SH apt repository list
 echo ====================================================
 echo ADDING HOMESEER.SH APT REPOSITORY
 echo ====================================================
