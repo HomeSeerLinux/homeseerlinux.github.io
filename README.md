@@ -283,7 +283,7 @@ sudo service homeseer status
 
 ## Debian Installation Notes
 
-This installation script and \*.deb installer package fails to install on Debian (10 & 11) due to the following unmet dependencies in the \*.deb installer package.
+This installation script and `*.deb` installer package fails to install on Debian (10 & 11) due to the following unmet dependencies in the installer package.
 
 | Package            | Issue       | Solution.  |
 | -----------        | ----------- |----------- |
