@@ -73,7 +73,7 @@ curl -sSL https://homeseer.sh/install | sudo bash
   | Ubuntu             | 20.04        | Success |
   | Linux Mint         | 20.2         | Success |
   | PopOS!             | 21.04.       | Success |
-  | Debian             | 10.10, 11.1  | Package fails to install in Debian 10, 11. <br/><a href="#debian-11-installation-notes">See this section for details on installinon Debian 10 & 11</a> |
+  | Debian             | 10.10, 11.1  | Package fails to install in Debian 10, 11. <br/><a href="#debian-installation-notes">See this section for details on installing on Debian 10 & 11</a> |
 
   ### Update OS
 
