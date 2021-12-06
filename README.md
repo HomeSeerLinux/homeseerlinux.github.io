@@ -18,15 +18,15 @@
    - [Complete Uninstallation/Removal](#complete-automated-removal--complete-uninstall)
  - [Advanced](#install-explict-versions)
    - [Install Explicit Versions](#install-explict-versions)
-   - [Enable Beta/Release Candidate Versions](#beta)
- - [Installation Notes/Details](#install-notes)
-   - [Location/Path](#install-path)
-   - [Service/Daemon](#install-service)
-   - [User Account](#install-user)
- - [Service Control](#service)
-   - [Start](#service-start)
-   - [Stop](#service-stop)
-   - [Restart](#service-restart)
+   - [Enable Beta/Release Candidate Versions](#enable-betarelease-candidate-versions)
+ - [Installation Notes/Details](#installation-notes--details)
+   - [Location/Path](#location--path)
+   - [Service/Daemon](#service--daemon)
+   - [User Account](#user-account)
+ - [Service Control](#service-control)
+   - [Start](#start-service)
+   - [Stop](#stop-service)
+   - [Restart](#restart-service)
    - [Status](#service-status)
 
 ---
@@ -100,7 +100,6 @@ sudo apt install homeseer=4.2.0.0
 ```
 
 ---
-<a id="beta"/>
 
 ## Enable Beta/Release Candidate Versions
 
@@ -137,11 +136,8 @@ sudo apt install homeseer=4.2.7.0
 ```
 
 ---
-<a id="install-notes"/>
 
 ## Installation Notes / Details
-
-<a id="install-path"/>
 
 ### Location/Path
 
@@ -150,8 +146,6 @@ The Homeseer Debian installed package will install Homeseer to the following loc
 ```
 /opt/HomeSeer
 ```
-
-<a id="install-service"/>
 
 ### Service / Daemon
 
@@ -165,20 +159,18 @@ The Homeseer Debian installed package will install a `homeseer.service` (systemd
 
 On completion of the installation, the Homeseer service should be started automatically. 
 
-<a id="install-user"/>
 
 ### User Account
 
 The Homeseer Debian installed package will create a `homeseer` system user account for use with the `homeseer.service` service/daemon.
 
 ---
-<a id="service"/>
 
 ## Service Control
 
 The following commands can be used to `start`, `stop`, `restart` and check the `status` of the Homeseer service/daemon.
 
-<a id="service-start"/>
+### Start Service
 
 You can `start` the Homeseer service using the following command:
 
@@ -186,13 +178,15 @@ You can `start` the Homeseer service using the following command:
 sudo service homeseer start
 ```
 
-<a id="service-stop"/>
+### Stop Service
 
 You can `stop` the Homeseer service using the following command:
 
 ```bash
 sudo service homeseer stop
 ```
+
+### Restart Service
 
 <a id="service-restart"/>
 
@@ -202,9 +196,9 @@ You can `restart` the Homeseer service using the following command:
 sudo service homeseer restart
 ```
 
-<a id="service-status"/>
+### Service Status
 
-You can chech the `status` of the Homeseer service using the following command:
+You can check the `status` of the Homeseer service using the following command:
 
 ```bash
 sudo service homeseer status
