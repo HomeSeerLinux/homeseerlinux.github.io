@@ -90,7 +90,7 @@ This method will leave any configurtation files, data files, log files and insta
 
 
 ## Complete Automated Removal / Complete Uninstall
-The following command will use our pre-built uninstallation scripts to completely remove/wipe all Homeseer files (_including configuration and log files_) from your (Debian-based) Linux system:
+The following command will use our pre-built uninstallation scripts to remove the HomeSeer application file and Homeseer.sh APT/PPA repository configuration files from your (Debian-based) Linux system:
 
 ```bash
 curl -sSL https://homeseer.sh/uninstall | sudo bash
@@ -99,7 +99,19 @@ curl -sSL https://homeseer.sh/uninstall | sudo bash
 > :pushpin:  Before running this script blindly with `sudo` privileges on your system, you should inspect the [script contents](https://raw.githubusercontent.com/HomeSeerLinux/homeseerlinux.github.io/main/uninstall) to ensure there are no nefarious or malicious actions taking place.  You can also view the file contents using this command: `curl https://homeseer.sh/uninstall`.
 
 
-> :warning:  This uninstall script will remove **all** Homeseer application files, data files and configuration files from your local system.  Please backup your Homeseer configuation data before uninstalling using this script.  This script will also remove the Homeseer.sh APT/PPA repository configuration from your system. 
+The following command will completely remove/wipe all Homeseer data, log and configutation files from your (Debian-based) Linux system:
+
+```bash
+sudo rm -R /opt/HomeSeer
+```
+
+The following command will remove/wipe the `homeseer` user account (used by the `homeseer.service` daemon) from your (Debian-based) Linux system:
+
+```bash
+sudo deluser homeseer
+```
+
+> :warning:  This uninstall script and commands will remove **all** Homeseer application files, data files and configuration files from your local system.  Please backup your Homeseer configuation data before uninstalling using this script/commands.  
 
 <br/>
 
