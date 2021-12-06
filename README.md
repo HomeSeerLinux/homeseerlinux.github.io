@@ -68,10 +68,12 @@ curl -sSL https://homeseer.sh/install | sudo bash
   A Debian-based distribution of Linux is required to use this installation script and APT/PPA repository.
   The following distributions have been tested:
   
-  - Ubuntu 20.04
-  - Linux Mint 20.2
-  - PopOS 21.04
-  - Debian 10.10, 11.1.0 (*The \*.deb package fails to install in Debian 10 & 11. [See this section for details on installing on Debian 10 & 11](#debian-11-installation-notes)*)
+  | OS/Distribution    | Version      | Notes  |
+  | -----------        | -----------  |----------- |
+  | Ubuntu             | 20.04        | Success |
+  | Linux Mint         | 20.2         | Success |
+  | PopOS!             | 21.04.       | Success |
+  | Debian             | 10.10, 11.1  | Package fails to install in Debian 10, 11. <br/><a href="#debian-11-installation-notes">See this section for details on installinon Debian 10 & 11</a> |
 
   ### Update OS
 
