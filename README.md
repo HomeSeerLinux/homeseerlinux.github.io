@@ -144,6 +144,12 @@ You can `stop` the Homeseer service using the following command:
 sudo service homeseer stop
 ```
 
+You can `restart` the Homeseer service using the following command:
+
+```bash
+sudo service homeseer restart
+```
+
 You can chech the `status` of the Homeseer service using the following command:
 
 ```bash
