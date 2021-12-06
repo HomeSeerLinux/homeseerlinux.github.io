@@ -9,6 +9,7 @@
 ## Contents
 
  - [Overview](#overview)
+   - [Resource Links](#resource-links)
  - [Installation](#install)
    - [Automated Installation](#install)
    - [Manual Installation](#install-manual)
