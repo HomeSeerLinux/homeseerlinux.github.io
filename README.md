@@ -2,7 +2,7 @@
 
 (Developed with ♥ by SavageSoftware, LLC.)
 
-<div style='background-color: #ffffcc; border: 1px solid silver; border-radius: 10px;'>This repository and scripts are considered <b>`EXPERIMENTAL`</b> at this time.  We are not responsible for any data lost or systems corrupted!</div>
+> :bomb:  This repository and scripts are considered `EXPERIMENTAL` at this time.  We are not responsible for any data lost or systems corrupted!
 
 ---
 
