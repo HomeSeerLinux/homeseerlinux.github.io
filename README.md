@@ -71,7 +71,7 @@ curl -sSL https://homeseer.sh/install | sudo bash
   - Ubuntu 20.04
   - Linux Mint 20.2
   - PopOS 21.04
-  - Debian 11.1.0 (*The \*.deb package fails to install in Debian GNU 11. [See this section for details on installing on Debian 11](#debian-11-installation-notes)*)
+  - Debian 10.10, 11.1.0 (*The \*.deb package fails to install in Debian 10 & 11. [See this section for details on installing on Debian 10 & 11](#debian-11-installation-notes)*)
 
   ### Update OS
 
@@ -270,9 +270,19 @@ sudo service homeseer status
 
 ---
 
-## Debian 11 Installation Notes
+## Debian Installation Notes
 
-This installation script and \*.deb installer package fails to install on Debian (v11) due to unmet dependencies in the \*.deb installer package.  These dependencies can be install in Debian manually using the following commands:    
+This installation script and \*.deb installer package fails to install on Debian (10 & 11) due to the following unmet dependencies in the \*.deb installer package.
+
+| Package          | Issue       | Solution.  |
+| -----------      | ----------- |----------- |
+| mono-complete    | Not available. | Add custom PPA and install package. |
+| mono-devel       | Not available. | Add custom PPA and install package. |
+| mono-vbnc        | Not available. | Add custom PPA and install package. |
+| chromium-browser | Not available. | Install `chromium` package instead. |
+| alsa-base        | Not available. | Install `alsamixergui` package instead. |
+
+These dependencies can be install in Debian manually using the following commands:    
 
 1.) Install the Mono framework:   
   ```
@@ -288,21 +298,14 @@ This installation script and \*.deb installer package fails to install on Debian
   
 2.) Install other dependencies:
   ```  
+  sudo apt install curl -y
   sudo apt install chromium -y
   sudo apt install alsamixergui -y
-  sudo apt install flite -y
-  sudo apt install aha -y
-  sudo apt install ffmpeg -y
-  sudo apt remove britty -y    
   ```
 
-3.) Download the homeseer (\*.deb) debian installation package from the APT/PPA repository:
+3.) Install the Homeseer (\*.deb) debian installation package via the automated installation script.
   ```
-  sudo apt download homeseer
-  ```
-4.) Install the downloaded homeseer (\*.deb) debian installation package with spcial flags to ignore mismatched named dependencies: 
-  ```
-  sudo dpkg -i --ignore-depends=chromium-browser,alsa-base homeseer_4.2.6.0_all.deb
+  curl -sSL https://homeseer.sh/install | sudo bash
   ```
 
 ---
