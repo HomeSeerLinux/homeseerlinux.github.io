@@ -42,7 +42,9 @@
   - WebPage: [https://homeseer.sh](https://homeseer.sh)
   - GitHub Repository: [https://github.com/HomeSeerLinux/homeseerlinux.github.io](https://github.com/HomeSeerLinux/homeseerlinux.github.io)
   - APT/PPA Package Repository: [https://github.com/HomeSeerLinux/download](https://github.com/HomeSeerLinux/download)
-   
+
+<br/>
+
 ---
 
 ## Automated Installation
@@ -64,6 +66,8 @@ echo 'deb [arch=all] https://homeseer.sh/download v4 stable' | sudo tee /etc/apt
 sudo apt update
 sudo apt install homeseer
 ```
+
+<br/>
 
 ---
 
@@ -88,6 +92,8 @@ curl -sSL https://homeseer.sh/uninstall | sudo bash
 
 > :warning:  This uninstall script will remove **all** Homeseer application files, data files and configuration files from your local system.  Please backup your Homeseer configuation data before uninstalling using this script.  This script will also remove the Homeseer.sh APT/PPA repository configuration from your system. 
 
+<br/>
+
 ---
 
 ## Install Explict Versions
@@ -98,6 +104,8 @@ Once your system has been configured with the Homeseer APT/PPA repository you ca
 ```bash
 sudo apt install homeseer=4.2.0.0
 ```
+
+<br/>
 
 ---
 
@@ -134,6 +142,8 @@ sudo apt install homeseer
 ```bash
 sudo apt install homeseer=4.2.7.0
 ```
+
+<br/>
 
 ---
 
@@ -205,5 +215,3 @@ You can check the `status` of the Homeseer service using the following command:
 ```bash
 sudo service homeseer status
 ```
-
----
