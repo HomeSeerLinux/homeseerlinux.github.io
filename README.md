@@ -70,19 +70,28 @@ curl -sSL https://homeseer.sh/install | sudo bash
   
   | OS/Distribution    | Version      | Notes  |
   | -----------        | -----------  |----------- |
-  | Ubuntu             | 20.04        | Success |
-  | Linux Mint         | 20.2         | Success |
-  | PopOS!             | 21.04.       | Success |
-  | Debian             | 10.10, 11.1  | Package fails to install in Debian 10, 11. <br/><a href="#debian-installation-notes">See this section for details on installing on Debian 10 & 11</a> |
+  | Ubuntu             | 20.04        | :white_check_mark: Installation successful; No known issues |
+  | Linux Mint         | 20.2         | :white_check_mark: Installation successful; No known issues |
+  | PopOS!             | 21.04        | :white_check_mark: Installation successful; No known issues |
+  | Debian             | 10.10, 11.1  | :heavy_exclamation_mark: Package fails to install in Debian 10, 11. <br/><a href="#debian-installation-notes">See this section for details on installing on Debian 10 & 11</a> |
 
   ### Update OS
 
-  An `sudo apt update && apt upgrade` was performed on each distribution prior to installation.
+  An update was performed on each distribution prior to installation.
 
+  ```  
+  sudo apt update 
+  sudo apt upgrade
+  ```
+  
   ### Curl
   
   Curl must be installed to download and execute the automated installation script.
 
+  ```  
+  sudo apt install curl -y
+  ```
+  
 <br/>
 
 ---
