@@ -54,7 +54,7 @@ The following command will use our pre-built installation scripts to install the
 curl -sSL https://homeseer.sh/install | sudo bash
 ```
 
-> :pushpin:  Before running this script blindly with `sudo` privileges on your system, you should inspect the [script contents](https://raw.githubusercontent.com/HomeSeerLinux/homeseerlinux.github.io/main/install) to ensure there are no nefarious or malicious actions taking place.
+> :pushpin:  Before running this script blindly with `sudo` privileges on your system, you should inspect the [script contents](https://raw.githubusercontent.com/HomeSeerLinux/homeseerlinux.github.io/main/install) to ensure there are no nefarious or malicious actions taking place.  You can also view the file contents using this command: `curl https://homeseer.sh/install`.
 
 
 ## Manual Installation
@@ -87,7 +87,7 @@ The following command will use our pre-built uninstallation scripts to completel
 curl -sSL https://homeseer.sh/uninstall | sudo bash
 ```
 
-> :pushpin:  Before running this script blindly with `sudo` privileges on your system, you should inspect the [script contents](https://raw.githubusercontent.com/HomeSeerLinux/homeseerlinux.github.io/main/uninstall) to ensure there are no nefarious or malicious actions taking place.
+> :pushpin:  Before running this script blindly with `sudo` privileges on your system, you should inspect the [script contents](https://raw.githubusercontent.com/HomeSeerLinux/homeseerlinux.github.io/main/uninstall) to ensure there are no nefarious or malicious actions taking place.  You can also view the file contents using this command: `curl https://homeseer.sh/uninstall`.
 
 
 > :warning:  This uninstall script will remove **all** Homeseer application files, data files and configuration files from your local system.  Please backup your Homeseer configuation data before uninstalling using this script.  This script will also remove the Homeseer.sh APT/PPA repository configuration from your system. 
