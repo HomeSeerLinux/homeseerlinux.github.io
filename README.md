@@ -274,13 +274,13 @@ sudo service homeseer status
 
 This installation script and \*.deb installer package fails to install on Debian (10 & 11) due to the following unmet dependencies in the \*.deb installer package.
 
-| Package          | Issue       | Solution.  |
-| -----------      | ----------- |----------- |
-| mono-complete    | Not available. | Add custom PPA and install package. |
-| mono-devel       | Not available. | Add custom PPA and install package. |
-| mono-vbnc        | Not available. | Add custom PPA and install package. |
-| chromium-browser | Not available. | Install `chromium` package instead. |
-| alsa-base        | Not available. | Install `alsamixergui` package instead. |
+| Package            | Issue       | Solution.  |
+| -----------        | ----------- |----------- |
+| `mono-complete`    | Not available. | Add custom PPA and install package. |
+| `mono-devel`       | Not available. | Add custom PPA and install package. |
+| `mono-vbnc`        | Not available. | Add custom PPA and install package. |
+| `chromium-browser` | Not available. | Install `chromium` package instead. |
+| `alsa-base`        | Not available. | Install `alsamixergui` package instead. |
 
 These dependencies can be install in Debian manually using the following commands:    
 
