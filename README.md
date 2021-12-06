@@ -6,6 +6,15 @@
 
 ---
 
+## TL;DR
+
+Install Homeseer on your (Debian-based) Linux system:
+```
+curl -sSL https://homeseer.sh/install | sudo bash
+```
+
+---
+
 ## Contents
 
  - [Overview](#overview)
