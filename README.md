@@ -43,7 +43,7 @@ curl -sSL https://homeseer.sh/install | sudo bash
    - [Stop](#stop-service)
    - [Restart](#restart-service)
    - [Status](#service-status)
-- [Debian 11 Installation Notes](#debian-11-installation-notes)
+- [Debian Installation Notes](#debian-installation-notes)
 
 ---
 
