@@ -70,9 +70,7 @@ curl -sSL https://homeseer.sh/install | sudo bash
   - Ubuntu 20.04
   - Linux Mint 20.2
   - PopOS 21.04
-  - Debian 11.1.0 (* see below)
-
-  > * The \*.deb package fails to install in Debian GNU 11.  [See this section for details on installing on Debian 11](#debian-11-installation-notes).  
+  - Debian 11.1.0 (The \*.deb package fails to install in Debian GNU 11.  [_See this section for details on installing on Debian 11](#debian-11-installation-notes)_)
 
   ### Update OS
 
