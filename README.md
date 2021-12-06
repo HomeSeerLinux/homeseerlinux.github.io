@@ -139,7 +139,7 @@ sudo apt install homeseer=4.2.7.0
 
 ## Installation Notes / Details
 
-### Location/Path
+### Location / Path
 
 The Homeseer Debian installed package will install Homeseer to the following location:
 
@@ -163,6 +163,8 @@ On completion of the installation, the Homeseer service should be started automa
 ### User Account
 
 The Homeseer Debian installed package will create a `homeseer` system user account for use with the `homeseer.service` service/daemon.
+
+<br/>
 
 ---
 
