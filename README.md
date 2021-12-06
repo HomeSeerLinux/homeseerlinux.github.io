@@ -6,6 +6,30 @@
 
 ---
 
+## Contents
+
+ - [Overview](#overview)
+ - [Installation](#install)
+   - [Automated Installation](#install)
+   - [Manual Installation](#install-manual)
+ - [Uninstall](#uninstall)
+   - [Uninstallation](#uninstall)
+   - [Complete Uninstallation/Removal](#uninstall-complete)
+ - [Installation Notes/Details](#install-notes)
+   - [Location/Path](#install-path)
+   - [Service/Daemon](#install-service)
+   - [User Account](#install-user)
+ - [Service Control](#service)
+   - [Start](#service-start)
+   - [Stop](#service-stop)
+   - [Restart](#service-restart)
+   - [Status](#service-status)
+
+---
+<a id="overview"/>
+
+## Overview
+
   The purpose of this repository is to host automated installation scripts and APT/PPA repository packages for installing HomeSeer on Debian-based Linux systems.
   The latest official release packages and release notes for HomeSeer can be found at: [https://docs.homeseer.com/display/HSPI/HS4+Release+Notes](https://docs.homeseer.com/display/HSPI/HS4+Release+Notes)
   
@@ -17,6 +41,7 @@
   - APT/PPA Package Repository: [https://github.com/HomeSeerLinux/download](https://github.com/HomeSeerLinux/download)
    
 ---
+<a id="install"/>
 
 ## Automated Installation
 The following command will use our pre-built installation scripts to install the latest release of Homeseer on your (Debian-based) Linux system:
@@ -26,6 +51,8 @@ curl -sSL https://homeseer.sh/install | sudo bash
 ```
 
 > :pushpin:  Before running this script blindly with `sudo` privileges on your system, you should inspect the [script contents](https://raw.githubusercontent.com/HomeSeerLinux/homeseerlinux.github.io/main/install) to ensure there are no nefarious or malicious actions taking place.
+
+<a id="install-manual"/>
 
 ## Manual Installation
 If you prefer not to use the simple script above due the the security nature of blindly allowing a script to run with `sudo` privileges, you can also use these commands to setup the appropriate Homeseer.sh APT/PPA repository on your local system:
@@ -38,6 +65,7 @@ sudo apt install homeseer
 ```
 
 ---
+<a id="uninstall"/>
 
 ## Uninstall 
 The following command will remove the Homeseer application files from your (Debian-based) Linux system:
@@ -46,6 +74,8 @@ The following command will remove the Homeseer application files from your (Debi
 sudo apt remove homeseer
 ```
 This method will leave any configurtation files, data files, log files and installed plugin files on the system in the `/opt/HomeSeer` directory.  This method will also leave the Homeseer.sh APT/PPA repository configured in case you wish to re-install HomeSeer later.
+
+<a id="uninstall-complete"/>
 
 ## Complete Automated Removal / Complete Uninstall
 The following command will use our pre-built uninstallation scripts to completely remove/wipe all Homeseer files (_including configuration and log files_) from your (Debian-based) Linux system:
@@ -60,6 +90,7 @@ curl -sSL https://homeseer.sh/uninstall | sudo bash
 > :warning:  This uninstall script will remove **all** Homeseer application files, data files and configuration files from your local system.  Please backup your Homeseer configuation data before uninstalling using this script.  This script will also remove the Homeseer.sh APT/PPA repository configuration from your system. 
 
 ---
+<a id="install-explicit"/>
 
 ## Install Explict Versions
 
@@ -71,6 +102,7 @@ sudo apt install homeseer=4.2.0.0
 ```
 
 ---
+<a id="beta"/>
 
 ## Enable Beta/Release Candidate Versions
 
@@ -107,8 +139,13 @@ sudo apt install homeseer=4.2.7.0
 ```
 
 ---
+<a id="install-notes"/>
 
-## Installation Location/Notes
+## Installation Notes / Details
+
+<a id="install-path"/>
+
+### Location/Path
 
 The Homeseer Debian installed package will install Homeseer to the following location:
 
@@ -116,13 +153,11 @@ The Homeseer Debian installed package will install Homeseer to the following loc
 /opt/HomeSeer
 ```
 
-Additionally a `homeseer` system user account is created and a `homeseer.service` is registered to run Homeseer automatically on startup and in the background.  
+<a id="install-service"/>
 
----
+### Service / Daemon
 
-## Service Control / Daemon
-
-The Homeseer Debian installed package will install a `homeseer.service` (systemd) configuration to the following location:
+The Homeseer Debian installed package will install a `homeseer.service` (systemd) to run Homeseer automatically on startup and in the background.  The `homeseer.service` (systemd) configuration is stored in the following location:
 
 ```bash
 /etc/systemd/system/homeseer.service
@@ -132,11 +167,28 @@ The Homeseer Debian installed package will install a `homeseer.service` (systemd
 
 On completion of the installation, the Homeseer service should be started automatically. 
 
+<a id="install-user"/>
+
+### User Account
+
+The Homeseer Debian installed package will create a `homeseer` system user account for use with the `homeseer.service` service/daemon.
+
+---
+<a id="service"/>
+
+## Service Control
+
+The following commands can be used to `start`, `stop`, `restart` and check the `status` of the Homeseer service/daemon.
+
+<a id="service-start"/>
+
 You can `start` the Homeseer service using the following command:
 
 ```bash
 sudo service homeseer start
 ```
+
+<a id="service-stop"/>
 
 You can `stop` the Homeseer service using the following command:
 
@@ -144,11 +196,15 @@ You can `stop` the Homeseer service using the following command:
 sudo service homeseer stop
 ```
 
+<a id="service-restart"/>
+
 You can `restart` the Homeseer service using the following command:
 
 ```bash
 sudo service homeseer restart
 ```
+
+<a id="service-status"/>
 
 You can chech the `status` of the Homeseer service using the following command:
 
