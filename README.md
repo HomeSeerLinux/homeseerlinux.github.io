@@ -10,14 +10,14 @@
 
  - [Overview](#overview)
    - [Resource Links](#resource-links)
- - [Installation](#install)
-   - [Automated Installation](#install)
-   - [Manual Installation](#install-manual)
+ - [Installation](#automated-installation)
+   - [Automated Installation](#automated-installation)
+   - [Manual Installation](#manual-installation)
  - [Uninstall](#uninstall)
    - [Uninstallation](#uninstall)
    - [Complete Uninstallation/Removal](#uninstall-complete)
- - [Advanced](#install-explicit)
-   - [Install Explicit Versions](#install-explicit)
+ - [Advanced](#install-explict-versions)
+   - [Install Explicit Versions](#install-explict-versions)
    - [Enable Beta/Release Candidate Versions](#beta)
  - [Installation Notes/Details](#install-notes)
    - [Location/Path](#install-path)
@@ -30,7 +30,6 @@
    - [Status](#service-status)
 
 ---
-<a id="overview"/>
 
 ## Overview
 
@@ -45,7 +44,6 @@
   - APT/PPA Package Repository: [https://github.com/HomeSeerLinux/download](https://github.com/HomeSeerLinux/download)
    
 ---
-<a id="install"/>
 
 ## Automated Installation
 The following command will use our pre-built installation scripts to install the latest release of Homeseer on your (Debian-based) Linux system:
@@ -94,7 +92,6 @@ curl -sSL https://homeseer.sh/uninstall | sudo bash
 > :warning:  This uninstall script will remove **all** Homeseer application files, data files and configuration files from your local system.  Please backup your Homeseer configuation data before uninstalling using this script.  This script will also remove the Homeseer.sh APT/PPA repository configuration from your system. 
 
 ---
-<a id="install-explicit"/>
 
 ## Install Explict Versions
 
