@@ -302,7 +302,7 @@ This installation script and \*.deb installer package fails to install on Debian
   ```
 4.) Install the downloaded homeseer (\*.deb) debian installation package with spcial flags to ignore mismatched named dependencies: 
   ```
-  sudo dpkg -i --ignore-depends=chromium-browser,alsa-base homeseer_4.2.6.0_all.deb`
+  sudo dpkg -i --ignore-depends=chromium-browser,alsa-base homeseer_4.2.6.0_all.deb
   ```
 
 ---
