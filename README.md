@@ -1,4 +1,5 @@
 [![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+![Release](https://img.shields.io/docker/v/homeseer/homeseer?color=g&label=Latest%20Available%20Release)
 
 # HomeSeer Linux Installer Package/Scripts
 
