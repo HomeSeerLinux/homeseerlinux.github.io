@@ -23,7 +23,7 @@ echo ====================================================
 echo REMOVING HOMESEER.SH GPG PUBLIC KEY
 echo ====================================================
 rm -f /etc/apt/keyrings/homeseer.gpg ||:
-n
+
 # update the apt package list
 echo ====================================================
 echo UPDATING APT REPOSITORIES
