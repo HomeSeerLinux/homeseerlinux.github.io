@@ -22,8 +22,8 @@ rm /etc/apt/sources.list.d/homeseer.list
 echo ====================================================
 echo REMOVING HOMESEER.SH GPG PUBLIC KEY
 echo ====================================================
-rm -f /etc/apt/trusted.gpg.d/homeseer.gpg ||:
-
+rm -f /etc/apt/keyrings/homeseer.gpg ||:
+n
 # update the apt package list
 echo ====================================================
 echo UPDATING APT REPOSITORIES
