@@ -1,5 +1,5 @@
 #########################################
 # HOMESEER (V4) LINUX - APT REPOSITORY
 #########################################
-deb [arch=all] https://homeseer.sh/download v4 stable
-#deb [arch=all] https://homeseer.sh/download v4 stable testing
+deb [arch=all signed-by=/etc/apt/keyrings/homeseer.gpg] https://homeseer.sh/download v4 stable
+#deb [arch=all signed-by=/etc/apt/keyrings/homeseer.gpg] https://homeseer.sh/download v4 stable testing
