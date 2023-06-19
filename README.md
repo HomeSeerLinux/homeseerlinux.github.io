@@ -115,7 +115,7 @@ If you prefer not to use the simple script above due the the security nature of 
 
 ```bash
 wget -qO- https://homeseer.sh/homeseer.gpg | sudo apt-key add -
-echo 'deb [arch=all] https://homeseer.sh/download v4 stable' | sudo tee /etc/apt/sources.list.d/homeseer.list
+echo 'deb [arch=all signed-by=/etc/apt/keyrings/homeseer.gpg] https://homeseer.sh/download v4 stable' | sudo tee /etc/apt/sources.list.d/homeseer.list
 sudo apt update
 sudo apt install homeseer
 ```
@@ -186,7 +186,7 @@ sudo nano /etc/apt/sources.list.d/homeseer.list
 2.) Edit the line with the `https://homeseer.sh/download` URI and include the `testing` label/tag at the end of the line as shown below.
 
 ```bash
-deb [arch=all] https://homeseer.sh/download v4 stable testing
+deb [arch=all signed-by=/etc/apt/keyrings/homeseer.gpg] https://homeseer.sh/download v4 stable testing
 ```
 
 3.) Save the updated file and exit the text editor.
