@@ -10,7 +10,12 @@
 echo ====================================================
 echo INSTALLING HOMESEER.SH GPG PUBLIC KEY
 echo ====================================================
-curl -ssL https://homeseer.sh/homeseer.gpg | apt-key add -
+curl -ssL https://homeseer.sh/homeseer.gpg -o /etc/apt/keyrings/homeseer.key
+gpg --yes -o /etc/apt/keyrings/homeseer.gpg --dearmor /etc/apt/keyrings/homeseer.key
+rm /etc/apt/keyrings/homeseer.key
+chown root:root /etc/apt/keyrings/homeseer.gpg
+chmod ugo+r /etc/apt/keyrings/homeseer.gpg
+chmod go-w /etc/apt/keyrings/homeseer.gpg
 
 # download and install the HOMESEER.SH apt repository list
 echo ====================================================

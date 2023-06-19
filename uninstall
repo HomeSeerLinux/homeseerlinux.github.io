@@ -22,7 +22,7 @@ rm /etc/apt/sources.list.d/homeseer.list
 echo ====================================================
 echo REMOVING HOMESEER.SH GPG PUBLIC KEY
 echo ====================================================
-apt-key del team@homeseer.sh
+rm -f /etc/apt/trusted.gpg.d/homeseer.gpg ||:
 
 # update the apt package list
 echo ====================================================
